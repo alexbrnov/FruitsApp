@@ -9,22 +9,28 @@
 /* Begin PBXBuildFile section */
 		0E5EF40B2B09EF7E00BA12FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EF40A2B09EF7E00BA12FB /* AppDelegate.swift */; };
 		0E5EF40D2B09EF7E00BA12FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EF40C2B09EF7E00BA12FB /* SceneDelegate.swift */; };
-		0E5EF40F2B09EF7E00BA12FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EF40E2B09EF7E00BA12FB /* ViewController.swift */; };
 		0E5EF4122B09EF7E00BA12FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5EF4102B09EF7E00BA12FB /* Main.storyboard */; };
 		0E5EF4142B09EF7F00BA12FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5EF4132B09EF7F00BA12FB /* Assets.xcassets */; };
 		0E5EF4172B09EF7F00BA12FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5EF4152B09EF7F00BA12FB /* LaunchScreen.storyboard */; };
 		0E5EF4202B09EFB600BA12FB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0E5EF41F2B09EFB600BA12FB /* Alamofire */; };
+		0E5EF4232B09F14900BA12FB /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EF4212B09F14900BA12FB /* MainTableViewController.swift */; };
+		0E5EF4262B09F38C00BA12FB /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EF4252B09F38C00BA12FB /* FruitCell.swift */; };
+		0E5EF4282B09F66000BA12FB /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EF4272B09F66000BA12FB /* Fruit.swift */; };
+		0E5EF4302B09F87E00BA12FB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EF42F2B09F87E00BA12FB /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E5EF4072B09EF7E00BA12FB /* FruitsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FruitsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5EF40A2B09EF7E00BA12FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E5EF40C2B09EF7E00BA12FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E5EF40E2B09EF7E00BA12FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E5EF4112B09EF7E00BA12FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E5EF4132B09EF7F00BA12FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E5EF4162B09EF7F00BA12FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E5EF4182B09EF7F00BA12FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E5EF4212B09F14900BA12FB /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		0E5EF4252B09F38C00BA12FB /* FruitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
+		0E5EF4272B09F66000BA12FB /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		0E5EF42F2B09F87E00BA12FB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +64,74 @@
 		0E5EF4092B09EF7E00BA12FB /* FruitsApp */ = {
 			isa = PBXGroup;
 			children = (
-				0E5EF40A2B09EF7E00BA12FB /* AppDelegate.swift */,
-				0E5EF40C2B09EF7E00BA12FB /* SceneDelegate.swift */,
-				0E5EF40E2B09EF7E00BA12FB /* ViewController.swift */,
-				0E5EF4102B09EF7E00BA12FB /* Main.storyboard */,
-				0E5EF4132B09EF7F00BA12FB /* Assets.xcassets */,
-				0E5EF4152B09EF7F00BA12FB /* LaunchScreen.storyboard */,
-				0E5EF4182B09EF7F00BA12FB /* Info.plist */,
+				0E5EF42E2B09F84900BA12FB /* SupportingFiles */,
+				0E5EF42A2B09F7A100BA12FB /* Model */,
+				0E5EF4292B09F78B00BA12FB /* View */,
+				0E5EF42B2B09F7F900BA12FB /* Storyboards */,
+				0E5EF42C2B09F80A00BA12FB /* ViewControllers */,
+				0E5EF42D2B09F82E00BA12FB /* Resources */,
+				0E5EF4312B09F8C800BA12FB /* Services */,
 			);
 			path = FruitsApp;
+			sourceTree = "<group>";
+		};
+		0E5EF4292B09F78B00BA12FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E5EF4252B09F38C00BA12FB /* FruitCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E5EF42A2B09F7A100BA12FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E5EF4272B09F66000BA12FB /* Fruit.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0E5EF42B2B09F7F900BA12FB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0E5EF4102B09EF7E00BA12FB /* Main.storyboard */,
+				0E5EF4152B09EF7F00BA12FB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0E5EF42C2B09F80A00BA12FB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0E5EF4212B09F14900BA12FB /* MainTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0E5EF42D2B09F82E00BA12FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E5EF4132B09EF7F00BA12FB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0E5EF42E2B09F84900BA12FB /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0E5EF40A2B09EF7E00BA12FB /* AppDelegate.swift */,
+				0E5EF4182B09EF7F00BA12FB /* Info.plist */,
+				0E5EF40C2B09EF7E00BA12FB /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0E5EF4312B09F8C800BA12FB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0E5EF42F2B09F87E00BA12FB /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E5EF40F2B09EF7E00BA12FB /* ViewController.swift in Sources */,
+				0E5EF4302B09F87E00BA12FB /* NetworkManager.swift in Sources */,
+				0E5EF4282B09F66000BA12FB /* Fruit.swift in Sources */,
+				0E5EF4262B09F38C00BA12FB /* FruitCell.swift in Sources */,
 				0E5EF40B2B09EF7E00BA12FB /* AppDelegate.swift in Sources */,
+				0E5EF4232B09F14900BA12FB /* MainTableViewController.swift in Sources */,
 				0E5EF40D2B09EF7E00BA12FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,7 +370,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9QQ83DLKAM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FruitsApp/Info.plist;
+				INFOPLIST_FILE = FruitsApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -333,7 +401,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9QQ83DLKAM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FruitsApp/Info.plist;
+				INFOPLIST_FILE = FruitsApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
